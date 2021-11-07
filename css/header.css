@@ -121,6 +121,13 @@ header {
     font-style: normal;
 }
 
+.header-contact>ul>li>div {
+    width: 13px;
+    max-width: 13px;
+    height: 13px;
+    max-height: 13px;
+}
+
 .header-contact>ul>li:last-child p {
     color: #fff;
 }
