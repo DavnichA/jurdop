@@ -1,0 +1,22 @@
+main {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-cell {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 416px;
+    max-height: 416px;
+    background: #8C8;
+}
+
+.flickity-page-dots {
+    bottom: 10px !important;
+}
