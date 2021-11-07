@@ -8,15 +8,176 @@ main {
     position: relative;
 }
 
+.carousel-cell-white-space {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 20px;
+    max-height: 20px;
+}
+
 .carousel-cell {
     position: relative;
     width: 100%;
     max-width: 100%;
-    height: 416px;
-    max-height: 416px;
-    background: #8C8;
+    height: 554px;
+    max-height: 554px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flickity-page-dots {
     bottom: 10px !important;
+}
+
+.carousel-cell-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    z-index: -1;
+}
+
+.carousel-cell-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.carousel-cell-content {
+    position: relative;
+    width: 780px;
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.carousel-header span {
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.carousel-text p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.carousel-text a {
+    color: #fff;
+}
+
+.flickity-prev-next-button.previous {
+    left: 5% !important;
+}
+
+.flickity-prev-next-button.next {
+    right: 5% !important;
+}
+
+.flickity-prev-next-button {
+    border-radius: 0 !important;
+}
+
+.flickity-prev-next-button>svg {
+    fill: #fff !important
+}
+
+.flickity-button {
+    background: hsla(0,0%,100%, 0.4) !important;
+}
+
+.flickity-page-dots .dot {
+    background: #fff !important;
+}
+
+
+@media (max-width: 1680px) {
+
+    .carousel-cell   {
+        height: 485px;
+        max-height: 485px;
+    }
+}
+
+
+@media (max-width: 1440px) {
+
+    .carousel-cell   {
+        height: 416px;
+        max-height: 416px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .carousel-cell   {
+        height: 369px;
+        max-height: 369px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .carousel-cell   {
+        height: 295px;
+        max-height: 295px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .carousel-header span {
+        font-size: 35px;
+    }
+
+    .flickity-prev-next-button {
+        display: none !important; 
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carousel-header span {
+        font-size: 28px;
+    }
+
+    .carousel-cell   {
+        height: 221px;
+        max-height: 221px;
+    }
+
+    .carousel-cell-content {
+        width: 98%;
+        max-width: 98%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .carousel-cell   {
+        height: 119px;
+        max-height: 119px;
+    }
+
+   .carousel-cell-white-space {
+       display: none;
+   }
+
+   .carousel-text {
+       display: none;
+   }
+
+   .carousel-header span {
+        font-size: 18px;
+    }
 }
