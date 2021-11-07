@@ -139,6 +139,13 @@ header {
     fill: #a6a6a6;
 }
 
+.header-logo {
+    width: 251px;
+    max-width: 251px;
+    height: 44px;
+    max-height: 44px;
+}
+
 .header-nav {
     position: relative;
 }
@@ -357,5 +364,12 @@ header {
     .header-white-space {
         height: 101px;
         max-height: 101px;
+    }
+
+    .header-logo {
+        width: 186px;
+        max-width: 186px;
+        height: 32px;
+        max-height: 32px;
     }
 }
