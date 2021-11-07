@@ -10,11 +10,20 @@ body {
 }
 
 header {
-    position: relative;
+    position: fixed;
     width: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    z-index: 999;
+}
+
+.header-white-space {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 113px;
+    max-height: 113px;
 }
 
 .main-container {
@@ -30,6 +39,10 @@ header {
     max-width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.second-line-head  {
+    background-color: #fff;
 }
 
 .first-line-head {
@@ -229,7 +242,15 @@ header {
     display: flex !important;
 }
 
+.header-bars {
+    display: none;
+}
+
 @media (max-width: 1024px) {
+    .header-bars {
+        display: block;
+    }
+
     .second-line-head,
     .first-line-head {
         z-index: 100;
@@ -324,5 +345,10 @@ header {
         height: 62px;
         max-height: 62px;
         cursor: pointer;
+    }
+
+    .header-white-space {
+        height: 101px;
+        max-height: 101px;
     }
 }
