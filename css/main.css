@@ -100,6 +100,52 @@ main {
     background: #fff !important;
 }
 
+/* text */
+
+.main-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+.main-text-content {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text-big-w-s {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    max-height: 80px;
+}
+
+.main-text-average-w-s {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 25px;
+    max-height: 25px;
+}
+
+.main-text-small-w-s {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 12px;
+    max-height: 12px;
+}
+
+.main-text-content img {
+    float: right;
+    margin: 7px 7px 7px 0;
+}
+
 
 @media (max-width: 1680px) {
 
