@@ -10,23 +10,11 @@ let flkty = new Flickity( elem, {
 
 // mobile menu
 function menuMobileActive() {
-
   const mobileNav = document.querySelector('.header-nav');
   mobileNav.classList.toggle('header-nav-active')
 }
 
 // submenu
-const subMenuBtns = document.querySelectorAll('.sub-menu-mobile-control');
-let iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
-let dEvent = "click";
-
-if(iOS != null) {
-  dEvent = "touchstart";
-}
-
-for (const button of subMenuBtns) {
-  button.addEventListener(dEvent, event => {
-    const subMenuEl = event.path[2]
-    subMenuEl.classList.toggle('sub-nav-active')
-  });
+function subMenuActive(e) {
+  e.parentNode.classList.toggle('sub-nav-active');
 }
