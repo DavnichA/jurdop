@@ -347,6 +347,13 @@ header {
         height: auto;
         cursor: pointer;
     }
+
+    .header-contact>ul>li {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 13px 1fr;
+    }
     
 }
 
