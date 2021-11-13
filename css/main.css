@@ -300,4 +300,9 @@ main {
         font-size: 26px;
         text-align: justify;
     }
+
+    .main-text-big-w-s {
+        height: 40px;
+        max-height: 40px;
+    }
 }
