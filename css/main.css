@@ -141,9 +141,54 @@ main {
     max-height: 12px;
 }
 
-.main-text-content img {
-    float: right;
-    margin: 7px 7px 7px 0;
+.main-text-content h1 {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.main-text-content p,
+.main-text-content h2 {
+    color: #666;
+}
+
+.main-text-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.main-text-content h2 {
+    font-size: 22px;
+}
+
+.main-text-content a {
+    color: #1779b9;
+}
+
+.img-text {
+    position: relative;
+    display: flex;
+}
+
+.img-text>div:first-child {
+    width: 50%;
+    max-width: 50%;
+}
+
+.img-text>div:last-child {
+    position: relative;
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+}
+
+.img-text img{
+    width: 410px;
+    height: 276px;
+    margin-left: 20px;
 }
 
 
@@ -189,6 +234,26 @@ main {
     .flickity-prev-next-button {
         display: none !important; 
     }
+
+    .img-text {
+        flex-direction: column;
+    }
+
+    .img-text>div:first-child {
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .img-text>div:last-child {
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .img-text img {
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -225,5 +290,14 @@ main {
 
    .carousel-header span {
         font-size: 18px;
+    }
+
+    .img-text img {
+        width: 100%;
+    }
+
+    .main-text-content h1 {
+        font-size: 26px;
+        text-align: justify;
     }
 }
