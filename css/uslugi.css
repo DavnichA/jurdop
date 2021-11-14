@@ -1,0 +1,90 @@
+.uslugi-big-w-s {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 36px;
+    max-height: 36px;
+}
+
+.uslugi-average-w-s {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 28px;
+    max-height: 28px;
+}
+
+.uslugi-small-w-s {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 12px;
+    max-height: 12px;
+}
+
+.services {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-line {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.service-line-content {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.services h1 {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.services p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.services h2 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.services h2>a {
+    color: #105787;
+    text-decoration: none;
+}
+
+.services h2>a:hover {
+    color: #1779b9;
+}
+
+@media (max-width: 500px) {
+
+    .service-img {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-img img,
+    .service-img picture {
+        width: 100%;
+        max-width: 100%;
+    }
+}
